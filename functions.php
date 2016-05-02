@@ -2,7 +2,7 @@
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 define("Themia_Version", "3.6.2beat");
 function themeConfig($form) {
-  echo '<p style="font-size:16px;text-align:center;">感谢您使用TE响应式主题 :<font color="#4A89DC"> Themia</font><font color="#F40"> '.Themia_Version.'</font> ![<a href="http://qqdie.com/archives/with-the-help-of-themia-subject-to-update-the-manual" target="_blank">帮助与更新</a>]</p>';
+  echo '<p style="font-size:16px;text-align:center;">感谢您使用TE响应式主题 :<font color="#4A89DC"> Themia</font><font color="#F40"> '.Themia_Version.'</font> !</p>';
   //网站LOGO
     $logoUrl = new Typecho_Widget_Helper_Form_Element_Text('logoUrl', NULL, NULL, _t('博主头像地址'), _t('logo头像地址，不填写默认内置头像，这个建议用正方形的图片√'));
     $form->addInput($logoUrl);
@@ -24,7 +24,7 @@ function themeConfig($form) {
     $sticky_3 = new Typecho_Widget_Helper_Form_Element_Text('sticky_3',NULL, NULL,'置顶文章ID', '填写对应主题的 id 即可使某些分类的文章在置顶首页显示（例如 1）。');
     $sticky_3->input->setAttribute('class', 'mini');
 $form->addInput($sticky_3->addRule('isInteger', '请填入数字'));
-    $weibo = new Typecho_Widget_Helper_Form_Element_Text('weibo', NULL,'http://weibo.com/jinzeboke', _t('新浪微博地址'), _t('填写你的新浪微博主页地址到菜单目录中'));
+    $weibo = new Typecho_Widget_Helper_Form_Element_Text('weibo', NULL,'http://weibo.com/jingtaochen', _t('新浪微博地址'), _t('填写你的新浪微博主页地址到菜单目录中'));
     $form->addInput($weibo);
 
 $Categories = new Typecho_Widget_Helper_Form_Element_Text('Categories', NULL,NULL, _t('Categories分类归档地址'), _t('新建独立页面，选择模板Categories，这里填入独立页面的完整地址'));
@@ -65,7 +65,7 @@ $form->addInput($css->multiMode());
     $form->addInput($sidebarBlock->multiMode());
 
 
-  $zfbUrl = new Typecho_Widget_Helper_Form_Element_Text('zfbUrl', NULL, NULL, _t('支付宝付款二维码'), _t('这里添加付款二维码的图片地址，不添加则默认jrotty的支付宝二维码'));
+  $zfbUrl = new Typecho_Widget_Helper_Form_Element_Text('zfbUrl', NULL, NULL, _t('支付宝付款二维码'), _t('这里添加付款二维码的图片地址，不添加则默认支付宝二维码'));
     $form->addInput($zfbUrl);
 
   $jsq = new Typecho_Widget_Helper_Form_Element_Radio('jsq',array('0' => _t('不显示文章浏览次数'),'1' => _t('非插件实现'),'2' => _t('绛木子TePostViews插件')),'1',_t('文章阅读次数显示方案（最后一项需要自行安装对应插件）'),_t("在工具开关中，打开文章浏览次数，然后选择这里的方案，两款方案最终效果都一样<br>只有绛木子TePostViews插件，在不清除cookie或者cookie未过期的情况下不会重复计数<br>提示：非插件的方案和Hanny的Stat插件使用的是同一个数据，所以如果你曾经用的是Star插件，可以直接选择非插件项，同时禁用Star插件，以免重复计数【不禁用的话，计数器计数会翻倍】"));
@@ -156,9 +156,9 @@ return $r;
 function showThumbnail($widget)
 { 
     // 当文章无图片时的默认缩略图
-    $rand = rand(1,99); // 随机 1-99 张缩略图
+    $rand = rand(1,5); // 随机 1-99 张缩略图
     $random = $widget->widget('Widget_Options')->themeUrl . '/img/sj/' . $rand . '.jpg'; // 随机缩略图路径
-   // $random = $widget->widget('Widget_Options')->themeUrl . '/img/mr.jpg'; // 若只想要一张默认缩略图请删除本行开头的"//"
+    // $random = $widget->widget('Widget_Options')->themeUrl . '/img/mr.jpg'; // 若只想要一张默认缩略图请删除本行开头的"//"
 
     $attach = $widget->attachments(1)->attachment;
     $pattern = '/\<img.*?src\=\"(.*?)\"[^>]*>/i'; 

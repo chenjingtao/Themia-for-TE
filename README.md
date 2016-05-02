@@ -20,8 +20,3 @@
 
 7，加入了本地评论，样式可能不太友好，如果不需要的话可以删除comments.php里面的内容，然后填入第三方评论代码
 
-详细介绍看下面的链接，github我比较迷茫所有有问题也去下面的链接评论
-
-http://qqdie.com/archives/with-the-help-of-themia-subject-to-update-the-manual/
-
-历史更新记录http://forum.typecho.org/viewtopic.php?f=5&t=9184
