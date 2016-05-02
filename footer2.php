@@ -4,7 +4,7 @@
     <span class="copyrights">
  &copy; 2016 <?php $this->author() ?>'s /
  Power By <a  target="_blank"  href="http://typecho.org/">Typecho</a> 
-/ Designed By <a  target="_blank"  href="http://qqdie.com/">Jrotty</a>
+/ Designed By <a  target="_blank"  href="http://www.bitbite.cn/">Jingtao</a>
 / Loading time <?php timer_stop($this) ?>s
 / <?php $this->options->tongji(); ?></span>
 </footer>
@@ -47,7 +47,7 @@ hrsold1=Math.floor(e_hrsold1);
 e_minsold1=(e_hrsold1-hrsold1)*60;
 minsold1=Math.floor((e_hrsold1-hrsold1)*60);
 seconds1=Math.floor((e_minsold1-minsold1)*60);
-document.getElementById("djclock").innerHTML ='博客已萌萌哒运行<span style="color:#E68321">'+daysold1+"</span><strong>天</strong><span style=\"color:#E68321\">"+hrsold1+"</span><strong>小时</strong><span style=\"color:#E68321\">"+minsold1+"</span><strong>分</strong><span style=\"color:#E68321\">"+seconds1+"</span><strong>秒</strong>";
+document.getElementById("djclock").innerHTML ='博客运行中<span style="color:#E68321">'+daysold1+"</span><strong>天</strong><span style=\"color:#E68321\">"+hrsold1+"</span><strong>小时</strong><span style=\"color:#E68321\">"+minsold1+"</span><strong>分</strong><span style=\"color:#E68321\">"+seconds1+"</span><strong>秒</strong>";
 }
 setInterval("THINPIGServerTime1()",250);
 //-->
@@ -72,8 +72,8 @@ style="background-color:<?php $this->options->bgUrl();?>;"
 
 <script>
 window.onblur = function() {
-    document.title = "发呆- ( ゜- ゜)つロ ";
-$("#web-icon").attr('href',"<?php $this->options->themeUrl('loss.ico'); ?>");
+    document.title = "Bitbite";
+$("#web-icon").attr('href',"<?php $this->options->themeUrl('B.ico'); ?>");
 window.onfocus = function() {
     document.title = "<?php $this->archiveTitle(array(
 'category'=>_t('分类 %s 下的文章'),
@@ -81,7 +81,7 @@ window.onfocus = function() {
 'tag' =>_t('标签 %s 下的文章'),
 'author'=>_t('%s 发布的文章')
 ), '', ' - '); ?><?php $this->options->title(); ?>";
-$("#web-icon").attr('href',"<?php $this->options->siteUrl(); ?>favicon.ico");
+$("#web-icon").attr('href',"<?php $this->options->themeUrl('B.ico'); ?>");
 
 }
 };
@@ -141,6 +141,3 @@ function setClipboardText(event) {
 <?php $this->footer(); ?> 
     </body>
 </html>
-
-
-
