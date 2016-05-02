@@ -3,9 +3,9 @@
  *Te响应式主题 : Themia，一款个性化十分丰富，附加功能非常全面，自定义字段非常屌的华丽的响应式模板。
  * 
  * @package Themia
- * @author Jrotty
- * @version 3.7.1
- * @link http://qqdie.com
+ * @author Jingtao
+ * @version 1.2
+ * @link http://www.bitbite.cn
  */
 ?>
   <?php $this->need('header.php'); ?>
