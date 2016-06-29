@@ -120,13 +120,6 @@ text-center<?php else: ?>text-left<?php endif; ?>">
     </div>
 
 
-<div class="popup effect-fade-scale" id="popup-shang">
-<div class="popup-content"><center><h3>
-支付宝转账赞助本站</h3>
-<div class="bdsharebuttonbox">
-<img width="200" height="200" <?php if ($this->options->zfbUrl){ ?>src="<?php $this->options->zfbUrl();?>"<?php }else{ ?>src="http://www.bitbite.cn/zfb.jpg"<?php };?> title="支付宝转账赞助" />
-<!--<p><img width="280" height="280" src="" title="微信转账赞助" /></p>--></div></center>
-
 
   <a id="rewardButton" disable="enable" onclick="var qr = document.getElementById('ew');var ds = document.getElementById('QR');if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}{ds.style.display='none'}" class="tag tag--primary tag--small t-link">
    文章二维码
