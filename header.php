@@ -23,8 +23,8 @@
 
 <meta name="full-screen" content="yes">  
 <meta name="x5-fullscreen" content="true"> <?php endif; ?> 
-        <link rel="icon" id="web-icon" href="/favicon.ico">
-        <link rel="apple-touch-icon" href="<?php $this->options->themeUrl('favicon.png'); ?>"/>
+        <link rel="icon" id="web-icon" href="B.ico">
+        <link rel="apple-touch-icon" href="<?php $this->options->themeUrl('B.ico'); ?>"/>
 <link rel="alternative" type="application/atom+xml" title="RSS" href="<?php $this->options->feedUrl(); ?>">
 
  
